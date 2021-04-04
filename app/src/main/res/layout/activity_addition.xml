@@ -59,14 +59,14 @@
                     android:layout_weight="1"
                     android:gravity="center">
 
-                    <Typewritter
+                    <in.codeshuffle.typewriterview.TypeWriterView
                         android:id="@+id/story"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Once there was an astronout. He went to Mars to save planet."
+                        android:text=""
                         android:fontFamily="@font/bubblebobble"
                         android:textColor="@color/pink"
-                        android:textSize="18sp" />
+                        android:textSize="15sp" />
                 </LinearLayout>
 
 
@@ -78,8 +78,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/s_story"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/leftpath"/>
+                android:layout_marginTop="10dp" />
 
             <ImageView
                 android:id="@+id/rightpath"
@@ -88,8 +87,7 @@
                 android:layout_below="@+id/s_story"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="10dp"
-                android:layout_marginRight="20dp"
-                android:src="@drawable/rightpath"/>
+                android:layout_marginRight="20dp" />
 
             <TextView
                 android:id="@+id/count"
@@ -98,8 +96,8 @@
                 android:layout_below="@+id/s_story"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="50dp"
-                android:text="|"
-                android:fontFamily="@font/bubble_bobble"
+                android:text=""
+                android:fontFamily="@font/bubblebobble"
                 android:textStyle="bold"
                 android:textSize="58sp"
                 android:textColor="@color/pink"
@@ -111,8 +109,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/count"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/plusicon"/>
+                android:layout_marginTop="10dp" />
 
             <TextView
                 android:id="@+id/count1"
@@ -121,8 +118,7 @@
                 android:layout_below="@+id/plusicon"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
-                android:text="|"
-                android:fontFamily="@font/bubble_bobble"
+                android:fontFamily="@font/bubblebobble"
                 android:textStyle="bold"
                 android:textSize="58sp"
                 android:textColor="@color/pink"/>
@@ -133,8 +129,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/plusicon"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="50dp"
-                android:src="@drawable/i_leftpath"/>
+                android:layout_marginTop="50dp" />
 
             <ImageView
                 android:id="@+id/i_rightpath"
@@ -143,8 +138,7 @@
                 android:layout_below="@+id/plusicon"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="50dp"
-                android:layout_marginRight="20dp"
-                android:src="@drawable/i_rightpath"/>
+                android:layout_marginRight="20dp" />
 
             <LinearLayout
                 android:id="@+id/e_story"
@@ -163,8 +157,7 @@
                     <ImageView
                         android:id="@+id/enemy"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/opponent"/>
+                        android:layout_height="wrap_content" />
 
                 </LinearLayout>
 
@@ -174,14 +167,14 @@
                     android:layout_weight="1"
                     android:gravity="center">
 
-                    <com.example.fyp.Typewritter
+                    <in.codeshuffle.typewriterview.TypeWriterView
                         android:id="@+id/enemystory"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/bubble_bobble"
+                        android:fontFamily="@font/bubblebobble"
                         android:textColor="@color/black"
-                        android:textSize="18sp"
-                        android:text="Once there was an astronout. He went to Mars to save planet."/>
+                        android:textSize="15sp"
+                        android:text=""/>
                 </LinearLayout>
 
 
@@ -200,27 +193,29 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:fontFamily="@font/bubble_bobble"
+                    android:fontFamily="@font/bubblebobble"
+                    android:textStyle="bold"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:text="Counting"/>
+                    android:textSize="20sp" />
 
-                <ImageView
+                <TextView
                     android:id="@+id/count2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:src="@drawable/count"/>
+                    android:fontFamily="@font/bubblebobble"
+                    android:textStyle="bold"
+                    android:textSize="28sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp" />
 
                 <TextView
                     android:id="@+id/bars"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:fontFamily="@font/bubble_bobble"
+                    android:fontFamily="@font/bubblebobble"
                     android:textColor="@color/black"
-                    android:textSize="25sp"
-                    android:text="Bars"/>
+                    android:textSize="25sp" />
 
             </LinearLayout>
 
@@ -241,8 +236,7 @@
                         android:id="@+id/one"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="|"
-                        android:fontFamily="@font/bubble_bobble"
+                        android:fontFamily="@font/bubblebobble"
                         android:textStyle="bold"
                         android:textSize="58sp"
                         android:textColor="@color/pink"
@@ -259,9 +253,7 @@
                     <ImageView
                         android:id="@+id/plus"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/plusicon"
-                        />
+                        android:layout_height="wrap_content" />
 
                 </LinearLayout>
 
@@ -275,8 +267,7 @@
                         android:id="@+id/one_add"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="|"
-                        android:fontFamily="@font/bubble_bobble"
+                        android:fontFamily="@font/bubblebobble"
                         android:textStyle="bold"
                         android:textSize="58sp"
                         android:textColor="@color/pink"
@@ -292,9 +283,7 @@
                     <ImageView
                         android:id="@+id/equals"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/equalsicon"
-                        />
+                        android:layout_height="wrap_content" />
 
                 </LinearLayout>
 
@@ -308,8 +297,7 @@
                         android:id="@+id/twobara"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="|"
-                        android:fontFamily="@font/bubble_bobble"
+                        android:fontFamily="@font/bubblebobble"
                         android:textStyle="bold"
                         android:textSize="58sp"
                         android:textColor="@color/pink"
@@ -320,8 +308,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="8dp"
-                        android:text="|"
-                        android:fontFamily="@font/bubble_bobble"
+                        android:fontFamily="@font/bubblebobble"
                         android:textStyle="bold"
                         android:textSize="58sp"
                         android:textColor="@color/pink"
@@ -338,8 +325,7 @@
                         android:id="@+id/two"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="2"
-                        android:fontFamily="@font/bubble_bobble"
+                        android:fontFamily="@font/bubblebobble"
                         android:textStyle="bold"
                         android:textSize="58sp"
                         android:textColor="@color/black"
@@ -365,8 +351,7 @@
                         android:id="@+id/onea"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="1"
-                        android:fontFamily="@font/bubble_bobble"
+                        android:fontFamily="@font/bubblebobble"
                         android:textStyle="bold"
                         android:textSize="28sp"
                         android:textColor="@color/black"/>
@@ -391,8 +376,7 @@
                         android:id="@+id/oneb"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="1"
-                        android:fontFamily="@font/bubble_bobble"
+                        android:fontFamily="@font/bubblebobble"
                         android:textStyle="bold"
                         android:textSize="28sp"
                         android:textColor="@color/black"/>
@@ -416,8 +400,7 @@
                         android:id="@+id/twoo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="2"
-                        android:fontFamily="@font/bubble_bobble"
+                        android:fontFamily="@font/bubblebobble"
                         android:textStyle="bold"
                         android:textSize="28sp"
                         android:textColor="@color/black"/>

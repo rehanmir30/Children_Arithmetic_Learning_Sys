@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FYP_Code">
-        <activity android:name=".Divide"></activity>
-        <activity android:name=".Multiplication" />
-        <activity android:name=".Subtraction" />
-        <activity android:name=".Addition" />
+        <activity android:name=".Divide" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
+        <activity android:name=".Multiplication" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".Subtraction" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".Addition" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
         <activity
             android:name=".HomeActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
