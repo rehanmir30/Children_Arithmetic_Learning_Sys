@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.view.View;
 import android.view.animation.AccelerateInterpolator;
@@ -97,6 +98,7 @@ public class Addition extends AppCompatActivity {
             @Override
             public void run() {
                 Story.setDelay(500);
+                Story.setWithMusic(false);
                 Story.animateText("Once there was an astronout. He went to Mars to save planet.");
             }
         },300);
@@ -166,6 +168,7 @@ public class Addition extends AppCompatActivity {
                 animation.setFillAfter(true);
                 enemy.startAnimation(animation);
                 Enemy_story.setDelay(500);
+                Enemy_story.setWithMusic(false);
                 Enemy_story.animateText("Once there was an astronout. He went to Mars to save planet.");
             }
         },8000);

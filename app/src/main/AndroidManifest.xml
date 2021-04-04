@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FYP_Code">
-        <activity android:name=".Activities.Scratch_addition"></activity>
+        <activity android:name=".Activities.Scratch_addition" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
         <activity
             android:name=".Activities.Divide"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
