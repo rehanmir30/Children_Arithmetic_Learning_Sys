@@ -1,10 +1,12 @@
-package com.example.fyp_code;
+package com.example.fyp_code.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.example.fyp_code.R;
 
 public class Splashscreen extends AppCompatActivity {
 
@@ -16,7 +18,7 @@ public class Splashscreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i=new Intent(Splashscreen.this,HomeActivity.class);
+                Intent i=new Intent(Splashscreen.this, HomeActivity.class);
                 startActivity(i);
                 finish();
             }

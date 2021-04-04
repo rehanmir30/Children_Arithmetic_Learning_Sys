@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/yellow"
     android:orientation="vertical"
-    tools:context=".Addition">
+    tools:context=".Activities.Addition">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -414,7 +414,15 @@
 
                 </LinearLayout>
             </LinearLayout>
-
+<ImageView
+    android:id="@+id/nextpage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/nextpage"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginBottom="20dp"
+    android:layout_marginRight="20dp"/>
         </RelativeLayout>
     </LinearLayout>
 

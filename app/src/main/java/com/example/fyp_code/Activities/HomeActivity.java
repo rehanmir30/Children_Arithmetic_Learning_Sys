@@ -1,4 +1,4 @@
-package com.example.fyp_code;
+package com.example.fyp_code.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
+
+import com.example.fyp_code.R;
 
 public class HomeActivity extends AppCompatActivity {
 

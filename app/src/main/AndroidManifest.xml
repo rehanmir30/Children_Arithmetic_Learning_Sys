@@ -9,15 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FYP_Code">
-        <activity android:name=".Divide" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
-        <activity android:name=".Multiplication" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
-        <activity android:name=".Subtraction" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
-        <activity android:name=".Addition" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".Activities.Scratch_addition"></activity>
         <activity
-            android:name=".HomeActivity"
+            android:name=".Activities.Divide"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
-            android:name=".Splashscreen"
+            android:name=".Activities.Multiplication"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Activities.Subtraction"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Activities.Addition"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Activities.HomeActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Activities.Splashscreen"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

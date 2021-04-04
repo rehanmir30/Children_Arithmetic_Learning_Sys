@@ -1,10 +1,12 @@
-package com.example.fyp_code;
+package com.example.fyp_code.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
@@ -12,6 +14,8 @@ import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
 import android.widget.TextClock;
 import android.widget.TextView;
+
+import com.example.fyp_code.R;
 
 import in.codeshuffle.typewriterview.TypeWriterView;
 
@@ -46,6 +50,7 @@ public class Addition extends AppCompatActivity {
     TextView oneb;
     TextView twoo;
 
+    ImageView nextpage;
 
     TypeWriterView Enemy_story;
 
@@ -78,6 +83,7 @@ public class Addition extends AppCompatActivity {
         onea = findViewById(R.id.onea);
         oneb = findViewById(R.id.oneb);
         twoo = findViewById(R.id.twoo);
+        nextpage=findViewById(R.id.nextpage);
 
         Animation animation = new TranslateAnimation(-500, 0,0, 0);
         animation.setDuration(1000);
@@ -85,6 +91,7 @@ public class Addition extends AppCompatActivity {
         player.startAnimation(animation);
         //player.setVisibility(0);
 
+        nextpage.setVisibility(View.GONE);
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -202,14 +209,23 @@ public class Addition extends AppCompatActivity {
             }
         },11000);
 
-//        new Handler().postDelayed(new Runnable() {
-//            @Override
-//            public void run() {
-//
-//
-//
-//            }
-//        },1000);
+
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                nextpage.setVisibility(View.VISIBLE);
+
+                nextpage.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent i=new Intent(Addition.this,Scratch_addition.class);
+                        startActivity(i);
+
+                    }
+                });
+            }
+        },12000);
 
 
 
